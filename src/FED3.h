@@ -234,6 +234,9 @@ class FED3 {
         // Temp/Humidity Sensor
         Adafruit_AHTX0 aht;
 
+        // Custom Variables
+        int motorTurnMultiplier = 1;
+
     private:
         static FED3* staticFED;
         static void updatePelletTriggerISR();

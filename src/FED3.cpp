@@ -149,7 +149,7 @@ void FED3::Feed() {
   do {	
 	
     if (pelletDispensed == false) {
-	    pelletDispensed = RotateDisk(-300);
+	    pelletDispensed = RotateDisk(-300 * motorTurnMultiplier);
     }
 
     pixelsOff();
